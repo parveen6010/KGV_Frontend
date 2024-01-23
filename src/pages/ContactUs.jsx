@@ -37,7 +37,8 @@ import axios from "axios"
       [e.target.name]: e.target.value,
     }))
   }
-
+  // https://backendkgv.vercel.app/
+ // http://localhost:5000/register
   // Handle Form Submission
   const handleOnSubmit = async (e) => {
     e.preventDefault();
@@ -53,6 +54,7 @@ import axios from "axios"
   
       if (response.status === 200) {
         console.log("Query submitted successfully!");
+        tostershow();
       } else {
         console.error("Failed to submit query.");
       }
@@ -71,8 +73,7 @@ import axios from "axios"
       address: "",
     query:""
     })
-    tostershow();
-    
+
   }
   const tostershow = () => {
     // Show toast message

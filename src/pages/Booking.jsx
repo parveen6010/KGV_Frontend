@@ -47,7 +47,7 @@ export const Booking = () => {
     e.preventDefault()
 
     try {
-      const  response =  await axios.post("http://localhost:5000/vistuser" ,{
+      const  response =  await axios.post("https://backendkgv.vercel.app/vistuser" ,{
       firstname,
       lastname,
       email,
