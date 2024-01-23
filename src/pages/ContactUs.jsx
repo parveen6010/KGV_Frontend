@@ -38,6 +38,7 @@ import axios from "axios"
     }))
   }
   // https://backendkgv.vercel.app/
+  //https://backendkgv.vercel.app/
  // http://localhost:5000/register
   // Handle Form Submission
   const handleOnSubmit = async (e) => {
@@ -53,6 +54,7 @@ import axios from "axios"
       });
   
       if (response.status === 200) {
+        console.log(response);
         console.log("Query submitted successfully!");
         tostershow();
       } else {
@@ -211,7 +213,7 @@ import axios from "axios"
                     style={{
                       boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
                     }}
-                    className="w-full h-56      rounded-[0.5rem]  p-[12px]  text-black outline-none"
+                    className="w-[95%] h-24      rounded-[0.5rem]  p-[12px]  text-black outline-none"
                   />
                 </label>
               </div>
@@ -220,7 +222,7 @@ import axios from "axios"
               {" "}
               <button
                 type="submit"
-                className="mt-6  rounded-[8px] bg-[#3EC70B] p-1 py-[12px] px-[14px] font-medium text-white"
+                className="mt-6  rounded-[8px] bg-[#3EC70B] p-1 py-[12px] px-[14px] font-medium text-white "
                 onClick={handleOnSubmit} 
               >
                 Raise A Query
